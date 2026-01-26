@@ -15,6 +15,9 @@ dist/
 Thumbs.db
 notes.md
 
+# Claude Code local settings
+.claude/
+
 # Environment Variables (SECRETS - DO NOT UPLOAD)
 .env
 .env.local
@@ -26,4 +29,13 @@ notes.md
 # Supabase - specific
 supabase/.temp/
 supabase/.branches/
+supabase/snippets/
 # We DO want to commit supabase/migrations and config.toml
+
+# Documentation with sensitive data
+docs/
+
+# Markdown files with credentials or sensitive data
+**/mycred.md
+**/credentials.md
+**/secrets.md
