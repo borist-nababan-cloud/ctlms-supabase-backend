@@ -34,6 +34,8 @@ supabase/snippets/
 
 # Documentation with sensitive data
 docs/
+my-cred/
+database-docs/
 
 # Markdown files with credentials or sensitive data
 **/mycred.md
