@@ -39,3 +39,11 @@ docs/
 **/mycred.md
 **/credentials.md
 **/secrets.md
+*.md
+
+# SQL data dumps (NOT migrations - keep supabase/migrations/*.sql)
+*.sql
+!supabase/migrations/*.sql
+
+# Temporary files
+nul
