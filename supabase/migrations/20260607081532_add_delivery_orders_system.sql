@@ -52,7 +52,7 @@ BEGIN
   INSERT INTO public.inventory_ledger (
     product_id, location, qty_change, transaction_type, reference_id, company_id, notes
   ) VALUES (
-    (SELECT product_id FROM public.master_sales_order WHERE id = NEW.sales_order_id),
+    (SELECT product_id FROM public.sales_orders WHERE id = NEW.sales_order_id),
     'STOCKPILE',
     -NEW.net_weight, -- Mengurangi stok
     'SALES_OUT',
