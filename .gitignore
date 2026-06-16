@@ -25,6 +25,8 @@ notes.md
 .env.test.local
 .env.production.local
 *.env
+.env.*
+
 
 # Supabase - specific
 supabase/.temp/
@@ -42,6 +44,7 @@ database-docs/
 **/credentials.md
 **/secrets.md
 *.md
+!README.md
 
 # SQL data dumps (NOT migrations - keep supabase/migrations/*.sql)
 *.sql

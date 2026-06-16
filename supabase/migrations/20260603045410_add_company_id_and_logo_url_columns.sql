@@ -32,7 +32,7 @@ AS $function$
 BEGIN
   RETURN EXISTS (
     SELECT 1 FROM public.user_profiles
-    WHERE uuid = user_id AND user_role = 8
+    WHERE uuid = user_id AND (user_role = 8 OR user_role = 1)
   );
 END;
 $function$
