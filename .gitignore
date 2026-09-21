@@ -1,0 +1,13 @@
+node_modules/
+.temp/
+
+# Sensitive and user requested
+*.env
+*.env.*
+*.sql
+PROJECT_SUMMARY.md
+tcp_module_analysis.md
+docs/
+my-cred/
+database-docs/
+nul

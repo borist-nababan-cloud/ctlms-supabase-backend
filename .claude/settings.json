@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(psql postgresql://postgres:postgres@127.0.0.1:54322/postgres -c ' *)",
+      "Bash(rm \"d:\\\\BEN\\\\NSM\\\\backend\\\\temp_create_function.sql\")",
+      "Bash(netsh interface *)",
+      "Bash(Select-String -Pattern \"error|Error|ERROR|failed\" -Context 2)",
+      "Bash(New-Item -ItemType Directory -Force -Path \"C:\\\\Users\\\\boris\\\\.supabase\")",
+      "Bash(Out-Null)",
+      "Bash(Out-File -FilePath \"C:\\\\Users\\\\boris\\\\.supabase\\\\profile\" -Encoding utf8)",
+      "Bash(mkdir -p /c/Users/boris/.supabase)",
+      "Bash(echo \"test\")",
+      "Bash(rm /c/Users/boris/.supabase/profile)",
+      "PowerShell(docker exec supabase_studio_backend ls -la /app/)",
+      "PowerShell(docker exec supabase_studio_backend sh -c \"curl -s http://localhost:3000/ | head -20\")",
+      "PowerShell(docker exec supabase_studio_backend ls -la /app/apps/)",
+      "PowerShell(docker exec supabase_studio_backend cat /app/apps/studio/package.json)",
+      "PowerShell(docker exec supabase_studio_backend sh -c \"wget -qO- http://localhost:3000/ 2>&1 | head -5\")",
+      "PowerShell(docker port supabase_studio_backend)",
+      "PowerShell(docker exec supabase_studio_backend ls -la /app/apps/studio/.next/ 2>$null)",
+      "PowerShell(docker exec supabase_studio_backend sh -c \"ls -la /app/apps/studio/ | head -20\")",
+      "PowerShell(docker exec supabase_studio_backend cat /proc/1/cmdline)",
+      "PowerShell(docker exec supabase_studio_backend cat /app/apps/studio/.env)",
+      "PowerShell(docker inspect supabase_studio_backend --format='{{json .Config.Env}}' | ConvertFrom-Json | Where-Object { $_ -match \"STUDIO|API\" })",
+      "PowerShell(docker exec supabase_studio_backend sh -c \"ls -la /app/apps/studio/.next/server/app/\" 2>$null)",
+      "PowerShell(docker exec supabase_studio_backend sh -c \"cat /app/apps/studio/.next/server/app-path-routes-manifest.json\" 2>$null)",
+      "PowerShell(docker exec supabase_studio_backend sh -c \"ls -la /app/apps/studio/app/\" 2>$null)",
+      "PowerShell(docker exec supabase_studio_backend sh -c \"ls -la /app/apps/studio/pages/\" 2>$null)",
+      "PowerShell(head -20)",
+      "PowerShell(docker exec supabase_studio_backend sh -c \"find /app/apps/studio -name 'index.js' -o -name 'index.tsx' | head -10\" 2>$null)",
+      "PowerShell(docker exec supabase_studio_backend sh -c \"ls -la /app/apps/studio/pages/\")",
+      "PowerShell(docker exec supabase_studio_backend sh -c \"find /app/apps/studio/.next/server/app -type f -name 'page.js' | head -10\")",
+      "Bash(psql \"postgresql://postgres:postgres@127.0.0.1:54900/postgres\" -c \"SELECT version\\(\\);\")",
+      "Bash(timeout 120 tail -f \"C:\\\\Users\\\\boris\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\d--BEN-NSM-backend\\\\8147086e-189f-4f61-91c1-68cea17af840\\\\tasks\\\\bp621a6jt.output\")",
+      "Bash(psql postgresql://postgres:postgres@127.0.0.1:54900/postgres -c ' *)"
+    ],
+    "additionalDirectories": [
+      "d:\\BEN\\NSM\\backend",
+      "C:\\Users\\boris\\.supabase"
+    ]
+  }
+}

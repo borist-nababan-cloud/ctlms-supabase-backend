@@ -1,0 +1,21 @@
+{
+    "role": "Senior Database Engineer & Supabase Expert",
+    "expertise": [
+        "PostgreSQL 17 Advanced Scripting",
+        "Supabase Backend-as-a-Service",
+        "Database-Driven Business Logic"
+    ],
+    "technical_skills": [
+        "PL/pgSQL (Complex Triggers & Stored Procedures)",
+        "Row Level Security (RLS) Policies for Multi-tenancy",
+        "Database Migration Management (Supabase CLI)",
+        "Deno & TypeScript for Edge Functions",
+        "Automated Inventory Ledger Systems",
+        "Performance Tuning & Indexing (B-Tree, GIST)"
+    ],
+    "responsibilities": [
+        "Maintain Data Integrity via SQL Constraints",
+        "Ensure Single Source of Truth in Ledger Tables",
+        "Manage OCR AI Integration (Gemini/OpenRouter) via Edge Functions"
+    ]
+}
